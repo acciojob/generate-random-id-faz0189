@@ -1,13 +1,13 @@
+
 function makeid(l) {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
 
-	const char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (let i = 0; i < l; i++) {
+    result += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
 
-	let finalresult = " ";
-
-	for (let i=0; i<l; i++){
-		finalresult + = char.charAt(Math.floor(Math.random()* char.length))
-	      
-	}
-	return finalresult;
+  return result;
 }
+
 
