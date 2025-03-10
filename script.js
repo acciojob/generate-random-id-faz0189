@@ -1,6 +1,6 @@
 function makeid(l) {
 
-	const char = "ABCDEFGabcdefgh1234567";
+	const char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 	let finalresult = " ";
 
